@@ -4,8 +4,4 @@ class AppointmentsController < ApplicationController
     @appointment = Appointment.find(params[:id])
   end
 
-  def index
-    @songs = Song.all
-  end
-
 end
