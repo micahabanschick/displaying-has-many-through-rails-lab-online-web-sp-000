@@ -5,7 +5,8 @@
   <h4><%= doctor.department %></h4>
   <ul>
     <% doctor.appointments.each do |appointment| %>
-      <li> <%= address.street_address_1 %> <%= address.city %>, <%= address.state %> </li>
+      <li> <%= appontment.appointment_datetime %> </li>
+      <li> <%= appontment.patient.name %> </li>
     <% end %>
   </ul>
 <% end %>
