@@ -4,10 +4,8 @@ class AppointmentsController < ApplicationController
     @appointment = Appointment.find(params[:id])
   end
 
-  private
-
-  def appointment_params
-    params.require(:appointment).permit(:date, :time)
+  def index
+    @songs = Song.all
   end
 
 end
