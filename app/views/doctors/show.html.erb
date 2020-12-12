@@ -2,7 +2,7 @@
 <h4><%= @doctor.department %></h4>
 <ul>
   <% @doctor.appointments.each do |appointment| %>
-    <li> <%= appointment.appointment_datetime.strftime(%B %d, %Y at %H:%M) %> </li>
+    <li> <%= appointment.appointment_datetime.strftime("%B %d, %Y at %H:%M") %> </li>
     <li> <%= appointment.patient.name %> </li>
   <% end %>
 </ul>
