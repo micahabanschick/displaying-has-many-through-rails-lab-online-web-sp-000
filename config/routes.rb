@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'appointments/show'
+
   resources :appointments
   get 'patients/index'
 
